@@ -4,13 +4,13 @@
   "description": "multiple hash functions",
   "main": "src/index.js",
   "scripts": {
-    "test": "aegir-test --webworker=false",
-    "test:browser": "aegir-test browser --webworker=false",
+    "test": "aegir-test",
+    "test:browser": "aegir-test browser",
     "test:node": "aegir-test node",
     "lint": "aegir-lint",
-    "release": "aegir-release --webworker=false --dom",
-    "release-minor": "aegir-release minor --webworker=false",
-    "release-major": "aegir-release major --webworker=false",
+    "release": "aegir-release",
+    "release-minor": "aegir-release minor",
+    "release-major": "aegir-release major",
     "build": "aegir-build",
     "coverage": "aegir-coverage",
     "coverage-publish": "aegir-coverage publish"
