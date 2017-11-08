@@ -4,16 +4,17 @@
   "description": "multiple hash functions",
   "main": "src/index.js",
   "scripts": {
-    "test": "aegir-test --webworker=false",
-    "test:browser": "aegir-test browser --webworker=false",
-    "test:node": "aegir-test node",
-    "lint": "aegir-lint",
-    "release": "aegir-release --webworker=false --dom",
-    "release-minor": "aegir-release minor --webworker=false",
-    "release-major": "aegir-release major --webworker=false",
-    "build": "aegir-build",
-    "coverage": "aegir-coverage",
-    "coverage-publish": "aegir-coverage publish"
+    "test": "aegir test --webworker=false",
+    "test:browser": "aegir test browser --webworker=false",
+    "test:node": "aegir test node",
+    "lint": "aegir lint",
+    "release": "aegir release --webworker=false --dom",
+    "release-minor": "aegir release minor --webworker=false",
+    "release-major": "aegir release major --webworker=false",
+    "build": "aegir build",
+    "coverage": "aegir coverage",
+    "coverage-publish": "aegir-coverage publish",
+    "babel": "babel dist -d lib"
   },
   "pre-commit": [
     "lint",
@@ -37,7 +38,9 @@
     "webcrypto": "~0.1.0"
   },
   "devDependencies": {
-    "aegir": "^11.0.0",
+    "aegir": "^12.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "chai": "^3.5.0",
     "pre-commit": "^1.2.2"
   },
